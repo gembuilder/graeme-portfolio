@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <link rel="icon" type="png" 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my diverse portfolio showcasing creative projects, web development, design, and more. Discover how I turn ideas into stunning digital experiences. Get inspired today!">
+    <title>Graeme Portfolio</title>
+    <script type="module" crossorigin="" src="./Graeme Portfolio_files/index-18e75fb9.js.download"></script>
+    <link rel="stylesheet" href="./Graeme Portfolio_files/index-45dcb685.css">
+	 <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+    }
+		 
+		    .tabs {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .tab-buttons {
+      display: flex;
+      border: 2px solid #ccc;
+      border-radius: 40px;
+      overflow: hidden;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .tab-button {
+      flex: 1;
+      padding: 12px 24px;
+      text-align: center;
+      background: none;
+      border: none;
+      font-size: 16px;
+      color: #FFF;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .tab-button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .tab-button.active {
+      background-color: #ccc;
+      font-weight: bold;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 20px;
+      background-color: white;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+		 
+		     .row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    figure {
+      flex: 1;
+      text-align: center;
+      margin: 0;
+    }
+
+    .grayscale-hover {
+      width: 100%;
+      transition: filter 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .grayscale-hover:hover {
+      filter: grayscale(100%);
+      transform: scale(1.03);
+    }
+
+    /* Lightbox styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.85);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 9999;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox-img-container {
+      position: relative;
+    }
+
+    .lightbox img {
+      max-width: 80vw;
+      max-height: 80vh;
+      border-radius: 10px;
+      animation: zoomIn 0.3s ease;
+    }
+
+    .lightbox-controls {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .btn {
+      background: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ddd;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+   </style>
+  </head>
+  <body text="#FFFFFF">
+  <div class="root" id="root">
+    <header class="header__close">
+      <nav class="y-wrap nav--desktop">
+        <div class="false logo-name-container__wrapper">
+          <div class="logo-name-container__wrapper--flex"><a class="" href="index.html">
+            <div class="logo-name-container nav-text"><span class="logo-name-container--white ">Graeme</span><span class="logo-name-container--grey ">Petersen</span></div>
+          </a></div>
+        </div>
+        <ul class="nav-container">
+          <li><a class="nav-text" href="about.html">About</a></li>
+          <li><a aria-current="page" class="nav-text active" href="projects.html">Projects</a></li>
+          <li><a class="nav-text" href="contact.html">Contact</a></li>
+        </ul>
+		  <div>
+          </a><a aria-label="linkedin" href="https://www.linkedin.com/in/graemepetersen/" target="_blank">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="nav-text" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3zm0 736c-447.8-.1-671.7-.2-671.7-.3.1-447.8.2-671.7.3-671.7 447.8.1 671.7.2 671.7.3-.1 447.8-.2 671.7-.3 671.7zM230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 1 0-137.6 0c-.1 38 30.7 68.8 68.8 68.8zm252.3 245.1c0-49.8 9.5-98 71.2-98 60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6V604.8z"></path>
+            </svg>
+            </a><a aria-label="email" href="mailto: graemepetersen29@gmail.com">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="nav-text" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"></path>
+              </svg>
+            </a></div>
+      </nav>
+    </header>
+    <main>
+      <section class="projects__container">
+        <div class="y-wrap y-space container-flex">
+          <div class="container-title ">
+            <h1>Projects</h1>
+            <p>Here are some of the projects I've worked on for myself and clients, each of which includes a case study.</p>
+          </div>
+          <div>
+            <div class="card__container">
+              <div class="card__image"><img src="./Graeme Portfolio_files/capeinstrumentservices.png" alt="cape instrument services" ></div>
+              <div class="card__text">
+                <h5>Cape Instrument Services</h5>
+                <span>NopCommerce - Ecommerce I developed a fully customized NopCommerce website with a modern look, responsive design, and enhanced user interface. I installed essential plugins, applied key upgrades for performance and security, and optimized the site for a smooth shopping experience. The result is a professional, user-friendly e-commerce platform tailored to the client’s specific needs and goals.</span>
+                <button type="button" class="primary-button left"><a href="https://cis-online.co.za/" target="_blank">Explore</a></button>
+              </div>
+            </div>
+            <div class="card__container">
+              <div class="card__image"><img src="./Graeme Portfolio_files/aluminiumservices.png" alt="aluminium services"></div>
+              <div class="card__text">
+                <h5>Aluminium Services</h5>
+                <span>Aluminium Services - Ecommerce(WooCommerce) I created a modern, elegant website that is fully SEO-optimized and aligned with the latest Google algorithm updates to enhance search visibility. Additionally, I integrated a mobile app available for both iOS and Google Play Store, allowing users to easily download and access the platform on their devices for a seamless and engaging experience. </span>
+                <button type="button" class="primary-button left"><a href="https://alus.co.za/" target="_blank">Explore</a></button>
+              </div>
+            </div>
+            <div class="card__container">
+              <div class="card__image"><img src="./Graeme Portfolio_files/sunbirdflooring.png" alt="sunbird flooring" target="_blank"></div>
+              <div class="card__text">
+                <h5>Sunbird Flooring</h5>
+                <span>Sunbird Flooring - Ecommerce(WooCommerce) I created a modern WordPress website using the Spexo template and Elementor for easy editing and customization. The site is fully SEO-optimized, following the latest Google algorithm guidelines to boost visibility and rankings. It features a responsive design for all devices, offering a clean, user-friendly experience that supports the client’s online presence and business growth.</span>
+                <button type="button" class="primary-button left"><a href="http://sunbirdflooring.free.nf/" target="_blank">Explore</a></button>
+              </div>
+            </div>
+            <div class="card__container">
+              <div class="card__image"><img src="./Graeme Portfolio_files/pools.png" alt="benji pools" target="_blank"></div>
+              <div class="card__text">
+                <h5>Benji Pools</h5>
+                <span>Benji Pools - Static I created a simple, user-friendly one-page website for a client seeking a clean and basic online presence. Using a single-page theme, I ensured smooth navigation and responsive design. The site was fully optimized for SEO and aligned with the latest Google algorithm updates to enhance visibility and support the client’s digital presence effectively.</span>
+                <button type="button" class="primary-button left"><a href="http://169.239.218.56/~ografixc/" >Explore</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+<div class="tabs">
+  <div class="tab-buttons">
+    <button class="tab-button active" onclick="showTab('graphic')">Graphic Design</button>
+    <button class="tab-button" onclick="showTab('logo')">Logo Design</button>
+  </div>
+
+  <div id="graphic" class="tab-content active">
+    <h2>Graphic Design</h2>
+    	<!-- Row 1 -->
+<div class="row">
+  <figure>
+    <img src="Graeme Portfolio_files/1.jpg" alt="poster 1" class="grayscale-hover">
+    <figcaption>flyer 1</figcaption>
+  </figure>
+  <figure>
+    <img src="Graeme Portfolio_files/2.jpg" alt="poster 2" class="grayscale-hover">
+    <figcaption>flyer 2</figcaption>
+  </figure>
+  <figure>
+    <img src="Graeme Portfolio_files/3.jpg" alt="poster 3" class="grayscale-hover">
+    <figcaption>flyer 3</figcaption>
+  </figure>
+</div>
+
+<!-- Row 2 -->
+  <div class="row">
+    <figure>
+      <img src="Graeme Portfolio_files/4.jpg" alt="poster 4" class="grayscale-hover">
+      <figcaption>flyer 4</figcaption>
+    </figure>
+    <figure>
+      <img src="Graeme Portfolio_files/6.jpg" alt="poster 5" class="grayscale-hover">
+      <figcaption>flyer 5</figcaption>
+    </figure>
+    <figure>
+      <img src="Graeme Portfolio_files/7.jpg" alt="Description 6" class="grayscale-hover">
+      <figcaption>flyer 6</figcaption>
+    </figure>
+  </div></div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-img-container">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+  <div class="lightbox-controls">
+    <button class="btn" id="prevBtn">Previous</button>
+    <a class="btn" id="downloadBtn" href="#" download>Download</a>
+    <button class="btn" id="nextBtn">Next</button>
+  </div>
+</div>	
+
+  <div id="logo" class="tab-content">
+    <h2>Logo Design</h2>
+      	<!-- Row 1 -->
+<div class="row">
+  <figure>
+    <img src="Graeme Portfolio_files/images/1.png" alt="logo 1" class="grayscale-hover">
+    <figcaption>logo 1</figcaption>
+  </figure>
+  <figure>
+    <img src="Graeme Portfolio_files/images/5.png" alt="logo 2" class="grayscale-hover">
+    <figcaption>logo 2</figcaption>
+  </figure>
+</div>
+
+<!-- Row 2 -->
+  <div class="row">
+    <figure>
+      <img src="Graeme Portfolio_files/images/3.png" alt="logo 3" class="grayscale-hover">
+      <figcaption>logo 3</figcaption>
+    </figure>
+    <figure>
+      <img src="Graeme Portfolio_files/images/2.png" alt="logo 4" class="grayscale-hover">
+      <figcaption>logo 4</figcaption>
+    </figure>
+  </div></div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-img-container">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+  <div class="lightbox-controls">
+    <button class="btn" id="prevBtn">Previous</button>
+    <a class="btn" id="downloadBtn" href="#" download>Download</a>
+    <button class="btn" id="nextBtn">Next</button>
+  </div>
+</div>
+	</div>
+      </section>
+    </main>
+	  
+    <footer class="footer__container y-space">
+      <div class="footer__text"><span>let's make something amazing together.</span>
+        <div class="footer__text--callaction"><span>start by</span>
+          <button type="button">saying hi</button>
+        </div>
+      </div>
+
+      <div>
+        </a><a aria-label="linkedin" href="https://www.linkedin.com/in/graemepetersen/" target="_blank">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="nav-text" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3zm0 736c-447.8-.1-671.7-.2-671.7-.3.1-447.8.2-671.7.3-671.7 447.8.1 671.7.2 671.7.3-.1 447.8-.2 671.7-.3 671.7zM230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 1 0-137.6 0c-.1 38 30.7 68.8 68.8 68.8zm252.3 245.1c0-49.8 9.5-98 71.2-98 60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6V604.8z"></path>
+          </svg>
+          </a><a aria-label="email" href="mailto: graemepetersen29@gmail.com">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="nav-text" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"></path>
+            </svg>
+          </a></div>
+		
+      <div class="footer__rights">
+        <div class="footer__rights--name"><span>Graeme</span><span>Petersen</span></div>
+        <div class="footer__rights--year"><span>® 2025. All Rights Reserved.</span></div>
+      </div>
+    </footer>
+  </div>
+  <section>Content for New section Tag Goes Here</section>
+		<script>
+  const images = document.querySelectorAll('.grayscale-hover');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const downloadBtn = document.getElementById('downloadBtn');
+  let currentIndex = 0;
+
+  const showImage = (index) => {
+    const img = images[index];
+    lightboxImg.src = img.src;
+    downloadBtn.href = img.src;
+    currentIndex = index;
+    lightbox.classList.add('active');
+  };
+
+  images.forEach((img, index) => {
+    img.addEventListener('click', () => showImage(index));
+  });
+
+  document.getElementById('closeBtn').addEventListener('click', () => {
+    lightbox.classList.remove('active');
+  });
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  });
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  });
+
+  // Close lightbox when clicking outside image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove('active');
+    }
+  });
+			
+  function showTab(tabId) {
+    const tabs = document.querySelectorAll('.tab-content');
+    const buttons = document.querySelectorAll('.tab-button');
+
+    tabs.forEach(tab => {
+      tab.classList.remove('active');
+    });
+
+    buttons.forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    document.getElementById(tabId).classList.add('active');
+    event.target.classList.add('active');
+  }
+	  </script>
+<script>  
+	function showTab(tabId) {
+    const tabs = document.querySelectorAll('.tab-content');
+    const buttons = document.querySelectorAll('.tab-button');
+
+    tabs.forEach(tab => {
+      tab.classList.remove('active');
+    });
+
+    buttons.forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    document.getElementById(tabId).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+</body></html>
